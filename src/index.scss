@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px, rgba(145, 158, 171, 0.14) 0px 4px 5px 0px, rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+body {
+    font-family: $font-family !important;
+}
+
+.border-main {
+    border: 1px solid $main-color!important ;
+}
+
+.rating-color {
+    color: $rating-color;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.network {
+    position: fixed;
+    top: 5%;
+    z-index: 99999;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-weight: bold;
+}
+
+a,
+a:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.product:hover {
+    box-shadow: $shadow;
+    border: solid 1px $main-color;
+}
+
+.product .btn {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.product .icon {
+    transition: transform 1s, opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.product:hover .btn {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.product:hover .icon {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.text-main {
+    color: $main-color;
+}
+
+.bg-main {
+    background-color: $main-color !important;
+}
+
+.bg-main-light {
+    background-color: $light-color !important;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.category-hover {
+    transition: all 0.5s;
+}
+
+.category-hover:hover {
+    scale: 1.01;
+    -webkit-box-shadow: 0px 0px 14px 3px rgba(26, 112, 0, 0.87);
+    -moz-box-shadow: 0px 0px 14px 3px rgba(26, 112, 0, 0.87);
+    box-shadow: 0px 0px 14px 3px rgba(26, 112, 0, 0.87);
+}
+
+.icon {
+    animation: icon 0.5s infinite alternate linear;
+}
+
+@keyframes icon {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.link:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.bn46 {
+    width: 130px;
+    height: 50px;
+}
+
+.bn45 {
+    width: 140px;
+    height: 42px;
+}

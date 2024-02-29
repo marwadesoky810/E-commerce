@@ -28,7 +28,8 @@ let routers = createBrowserRouter([
     path: '', element: <Layout />, children: [
       { index:true, element: <ProtectedRoute> <Home /> </ProtectedRoute> },
       { path: 'brands', element: <ProtectedRoute> <Brands /> </ProtectedRoute> },
-      { path: 'https://marwadesoky810.github.io/E-commerce/', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
+      { path: '/E-commerce', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
+      { path: '', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
       { path: 'categories', element: <ProtectedRoute> <Categories /> </ProtectedRoute> },
       { path: 'cart', element: <ProtectedRoute> <Cart /> </ProtectedRoute> },
       { path: 'wishlist', element: <ProtectedRoute> <WishList /> </ProtectedRoute> },

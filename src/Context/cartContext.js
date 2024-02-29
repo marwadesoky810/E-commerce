@@ -80,20 +80,7 @@ function onlinePayment(cartId, url, values) {
         .catch((error) => error);
 }
 
-// function addToWishList(id) {
-//     return axios
-//         .post(
-//             `https://ecommerce.routemisr.com/api/v1/wishlist`,
-//             {
-//                 productId: id,
-//             },
-//             {
-//                 headers,
-//             }
-//         )
-//         .then((response) => response)
-//         .catch((error) => error);
-// }
+
 
 export default function CartContextProvider(props) {
     const [isLoading, setIsLoading] = useState(false);

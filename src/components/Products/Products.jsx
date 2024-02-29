@@ -9,7 +9,10 @@ import toast from "react-hot-toast";
 import { WishListContext } from "../../Context/wishListContext";
 
 export default function Products() {
+
   let { addToCart, setCartNumber } = useContext(CartContext);
+
+  
   async function addProductToCart(id) {
     let { data } = await addToCart(id);
     setCartNumber(data.numOfCartItems);

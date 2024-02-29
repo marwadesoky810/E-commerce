@@ -25,7 +25,6 @@ export default function Cart() {
     setIsLoading,
   } = useContext(CartContext);
 
-  // const [mainDetails, setMainDetails] = useState('');
 
   async function getCartItems() {
     setIsLoading(true);
@@ -41,7 +40,6 @@ export default function Cart() {
 
   async function removeItem(id) {
     let { data } = await removeCartItem(id);
-    // console.log(data);
     setCartDetails(data);
     setCartNumber(data.numOfCartItems);
     setTotalCartPrice(data?.data.totalCartPrice);
@@ -156,7 +154,7 @@ export default function Cart() {
 
         <div className="d-flex justify-content-center align-items-center p-3">
           <Link to={'/payment'} className="btn bg-main text-white">Online Payment</Link>
-          {/* <button className="btn bg-main text-white ms-3">Cash On Delivery</button> */}
+          
         </div>
         
       </>) : (<>
